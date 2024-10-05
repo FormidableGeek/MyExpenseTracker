@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 2.3rem;
+}
+.top a {
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: rgb(16, 16, 61);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+header {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+header::before{
+    content: '';
+    bottom: 0;
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+.container{
+    margin: 15px 0;
+    padding:0px 10px;
+}
+.container p{
+    margin-top: 10px;
+}
+input{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+    border:2px solid grey;
+}
+
+.input-text {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.signin-div{
+    padding-top: 30px;
+}
+
+button {
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    padding: 6px 15px;
+    background-color: rgb(112, 141, 146);
+    color: #fff;
+    transition: .4s all;
+    cursor: pointer;
+}
+button:hover{
+    background: linear-gradient(to left,grey,rgb(16, 16, 61));
+}
+.alt{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.alt p{
+    font-size: .93rem;
+}
+.login,.sign-up{
+    text-decoration: none;
+    color:darkgray;
+    font-size: 1.13rem;
+    position: relative;
+}
+.login::before,.sign-up::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    transition: .4s all;
+}
+.login:hover::before,.sign-up:hover::before{
+    width: 100%;
+}
+.sign-up{
+    text-decoration: none;
+}
