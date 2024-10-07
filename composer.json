@@ -1,0 +1,20 @@
+{
+    "name": "plg/my_money_expense_tracker",
+    "description": "This is a basic web application that tracks a user expenses and income.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Plg\\MyMoneyExpenseTracker\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "PLG Web Development Class"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
