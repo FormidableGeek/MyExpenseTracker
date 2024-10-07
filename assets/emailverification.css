@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: #2e4053;
+
+  font-family: "poppins", sans-serif;
+}
+
+main {
+  width: 40%;
+  margin: auto;
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+@media (max-width: 768px) {
+  main {
+    width: 80%;
+  }
+}
+section {
+  width: 100%;
+  text-align: center;
+}
+
+.fa {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+.txt {
+  font-size: 0.8rem;
+  margin: 10px 0;
+}
+
+.verify {
+  font-size: 0.59rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 8px;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #2e4053;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.envelop {
+  font-size: 3rem;
+  color: #2e4053;
+
+}
+
+.social-icons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+}
+
+.icons {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #2e4053;
+
+}
+
+.border {
+  margin: 50px auto;
+  height: 1px;
+  width: 60%;
+  background-color: black;
+}

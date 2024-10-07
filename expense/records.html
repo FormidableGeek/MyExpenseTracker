@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/MyExpenseTracker/assets/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <a href="/MyExpenseTracker/expense/records.html">mymoney</a>
+        <div>
+           
+  <i class="fa fa-search" id="search-icon"></i>
+
+<div class="search-overlay" id="search-overlay">
+     <div class="close">
+        
+        <i class="fa-solid fa-xmark" id="close-search"></i>
+    </div>
+  <div class="search-input-container">
+   
+      <input type="search" id="search-input" placeholder="Search...">
+      <input type="submit" value="search" id="sub">
+       
+     </div>
+  </div>
+</div>
+        </div>
+      </div>
+      <div class="checks">
+        <div class="expense a">
+          <h2>expense</h2>
+          <p style="color: red">$0.0</p>
+        </div>
+        <div class="income a">
+          <h2>income</h2>
+          <p style="color:yellowgreen">$0.0</p>
+        </div>
+        <div class="total a">
+          <h2>total</h2>
+          <p style="color: yellowgreen">$0.0</p>
+        </div>
+      </div>
+    </header>
+    <section class="main"></section>
+    <div class="add">
+      <i class="fa-solid fa-plus"></i>
+  </div>
+    <div class="user">
+    <div class="topi">
+        <a href="#" class="clos">cancel</a>
+        <a href="#" class="s">save</a>
+    </div>
+    <div class="slide">
+        <h5 class="tab-link active" data-tab="tab1" >income</h5>
+        <h5 class="tab-link" data-tab="tab2">expense</h5>
+        <h5 class="tab-link" data-tab="tab3">transfer</h5>
+    </div>
+    <div class="tab active" id="tab1">
+    <div class="first">
+        <div class="c">
+            <p>account</p>
+            <button>
+                <select name="" id="">
+                    <option value="">card</option>
+                    <option value="">cash</option>
+                    <option value="">savings</option>
+                </select>
+            </button>
+        </div>
+        <div class="c">
+            <p>category</p>
+            <button>
+                <select name="" id="" >
+                    <option value="">awards</option>
+                    <option value="">coupons</option>
+                    <option value="">grants</option> 
+                    <option value="">sale</option> 
+                    <option value="">salary</option> 
+                </select>
+            </button>
+            </button>
+        </div>
+    </div>
+    <textarea name="" id="" placeholder="add notes"></textarea>
+    <form>
+    <input type="text" id="display" readonly>
+    <table>
+      <tr>
+        <td><button type="button" value="7">7</button></td>
+        <td><button type="button" value="8">8</button></td>
+        <td><button type="button" value="9">9</button></td>
+        <td><button type="button" value="/">/</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" value="4">4</button></td>
+        <td><button type="button" value="5">5</button></td>
+        <td><button type="button" value="6">6</button></td>
+        <td><button type="button" value="*">*</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" value="1">1</button></td>
+        <td><button type="button" value="2">2</button></td>
+        <td><button type="button" value="3">3</button></td>
+        <td><button type="button" value="-">-</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" value="0">0</button></td>
+        <td><button type="button" value=".">.</button></td>
+        <td><button type="button" value="=">=</button></td>
+        <td><button type="button" value="+">+</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="button" value="C">C</button></td>
+        <td colspan="2"><button type="button" value="Del">Del</button></td>
+      </tr>
+    </table>
+  </form>
+    </div>
+     <div class="tab" id="tab2">
+    <div class="first">
+        <div class="c">
+            <p>account</p>
+            <button>
+                <select name="" id="">
+                    <option value="">card</option>
+                    <option value="">cash</option>
+                    <option value="">savings</option>
+                </select>
+            </button>
+        </div>
+        <div class="c">
+            <p>category</p>
+            <button>
+                <select name="category" id="" >
+                    <option value="">car</option>
+                    <option value="">beauty</option>
+                    <option value="">bills</option>
+                    <option value="">socials</option>
+                    <option value="">electronics</option>
+                    <option value="">sports</option>
+                    <option value="">tax</option>
+                </select>
+            </button>
+            </button>
+        </div>
+    </div>
+    <textarea name="" id="" placeholder="add notes"></textarea>
+    <form>
+    <input type="text" id="display" readonly>
+    <table>
+      <tr>
+        <td><button type="button" value="7">7</button></td>
+        <td><button type="button" value="8">8</button></td>
+        <td><button type="button" value="9">9</button></td>
+        <td><button type="button" value="/">/</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" value="4">4</button></td>
+        <td><button type="button" value="5">5</button></td>
+        <td><button type="button" value="6">6</button></td>
+        <td><button type="button" value="*">*</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" value="1">1</button></td>
+        <td><button type="button" value="2">2</button></td>
+        <td><button type="button" value="3">3</button></td>
+        <td><button type="button" value="-">-</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" value="0">0</button></td>
+        <td><button type="button" value=".">.</button></td>
+        <td><button type="button" value="=">=</button></td>
+        <td><button type="button" value="+">+</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="button" value="C">C</button></td>
+        <td colspan="2"><button type="button" value="Del">Del</button></td>
+      </tr>
+    </table>
+  </form>
+    </div>
+ <div class="tab" id="tab3">
+    <div class="first">
+        <div class="c">
+            <p>from</p>
+            <button>
+                <select name="" id="">
+                    <option value="">card</option>
+                    <option value="">cash</option>
+                    <option value="">savings</option>
+                </select>
+            </button>
+        </div>
+        <div class="c">
+            <p>to</p>
+            <button>
+                <select name="" id="" >
+                     <option value="">card</option>
+                    <option value="">cash</option>
+                    <option value="">savings</option>
+                </select>
+            </button>
+            </button>
+        </div>
+    </div>
+    <textarea name="" id="" placeholder="add notes"></textarea>
+    <form>
+    <input type="text" id="display" readonly>
+    <table>
+      <tr>
+        <td><button type="button" value="7">7</button></td>
+        <td><button type="button" value="8">8</button></td>
+        <td><button type="button" value="9">9</button></td>
+        <td><button type="button" value="/">/</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" value="4">4</button></td>
+        <td><button type="button" value="5">5</button></td>
+        <td><button type="button" value="6">6</button></td>
+        <td><button type="button" value="*">*</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" value="1">1</button></td>
+        <td><button type="button" value="2">2</button></td>
+        <td><button type="button" value="3">3</button></td>
+        <td><button type="button" value="-">-</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" value="0">0</button></td>
+        <td><button type="button" value=".">.</button></td>
+        <td><button type="button" value="=">=</button></td>
+        <td><button type="button" value="+">+</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="button" value="C">C</button></td>
+        <td colspan="2"><button type="button" value="Del">Del</button></td>
+      </tr>
+    </table>
+  </form>
+    </div>
+    </div>
+   <div class="footer">
+      <div class="records a">
+        <a href="/MyExpenseTracker/expense/records.html">
+          <i class="fa-solid fa-clipboard"></i>
+          <h3>records</h3></a
+        >
+      </div>
+      <div class="analysis a">
+        <a href="/MyExpenseTracker/expense/analysis.html"
+          ><i class="fa-solid fa-chart-line"></i>
+          <h3>analysis</h3></a
+        >
+      </div>
+      <div class="accounts a">
+        <a href="/MyExpenseTracker/expense/accounts.html"
+          ><i class="fa-solid fa-user-plus"></i>
+          <h3>accounts</h3></a
+        >
+      </div>
+    </div>
+    <script src="/MyExpenseTracker/javascript/js.js"></script>
+  </body>
+</html>
