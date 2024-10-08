@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="/assets/register.css" />
+    <link rel="stylesheet" href="/assets/css/register.css" />
     <title>sign up</title>
   </head>
   <body>
@@ -20,23 +20,30 @@
         <a href="/expense/records.html">mymoney</a>
       </div>
 
-      <form action="">
+      <form action="" id="reg-form">
+        <div class="container">
+          <p class="input-text">Username:</p>
+          <input name="username"  type="text" placeholder="jonedoe" id="username"/>
+        </div>
+
         <div class="container">
           <p class="input-text">Email:</p>
-          <input type="text" placeholder="jonedoe@gmail.com" id="text"/>
+          <input name="email"  type="email" placeholder="jonedoe@gmail.com" id="email"/>
         </div>
         <div class="container">
           <p class="input-text">Password:</p>
-          <input type="password" placeholder="123456#" id="password" />
+          <input type="password" name="password" placeholder="123456#" id="password" />
         </div>
         <div class="container">
           <p class="input-text">Confirm password:</p>
-          <input type="password" placeholder="123456" id="confirm-password" />
+          <input type="password"  placeholder="123456" id="confirm-password" />
+        </div>
+
+        <div class="signin-div">
+          <button type="submit"  id="submit-btn">SIGN-UP</button>
         </div>
       </form>
-      <div class="signin-div">
-        <button  id="submit-btn">SIGN-UP</button>
-      </div>
+
       <div class="alt">
         <p class="have an acct">
           Already have an account?
@@ -44,7 +51,7 @@
         </p>
       </div>
     </main>
-    <script src="/javascript/sign.js"></script>
+    <script src="/assets/javascript/sign.js"></script>
     
   </body>
 </html>

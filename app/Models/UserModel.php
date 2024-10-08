@@ -18,19 +18,25 @@ class UserModel extends DatabaseConnection{
 
     }
 
-    public function create(string $email,string $username,string $password):bool
+    public function create():bool
     {
         try{
             $query="INSERT INTO `users` (`email`,`username`,`password`) VALUES(:email,:username,:password)";
+           
+            $email=$this->escape($this->email);
+            $username=$this->escape($this->username);
+            $password=$this->escape($this->password);
+
             $stmt=$this->connect()->prepare($query);
-            $stmt->bindParam(':email',$this->escape($this->email));
-            $stmt->bindParam(':username',$this->escape($this->username));
-            $stmt->bindParam(':password',$this->escape($this->password));
+            $stmt->bindParam(':email',$email);
+            $stmt->bindParam(':username',$username);
+            $stmt->bindParam(':password',$password);
+
            if($stmt->execute()){
               return true;
             }else{return false;}
        }catch(\PDOException $e){
-        //$e->getMessage();
+       // return $e->getMessage();
            return false;
         }
      

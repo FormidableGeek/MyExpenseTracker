@@ -20,6 +20,11 @@ class Authentication extends UserModel{
            $this->password=password_hash($password,PASSWORD_DEFAULT);
            $this->email=$email;
            $this->create();
+
+           $_SESSION['user']=[
+            'username'=>$username,
+            'email'=>$email
+           ];
      
            return true;
         }catch(\Throwable $e){return false;}
